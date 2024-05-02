@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common'
-import { UsecaseModule } from 'src/application/usecase/_usecase.module'
+import { UsecaseModule } from '@/application/usecase/_usecase.module'
 import { HealthController } from './health.controller'
 
 @Module({
