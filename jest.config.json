@@ -9,11 +9,15 @@
   "coveragePathIgnorePatterns": [
     "\\.module\\.ts$",
     "\\.service\\.ts$",
+    "\\.dto\\.ts$",
+    "\\.filter\\.ts$",
     "main.ts"
   ],
   "testPathIgnorePatterns": [
     "\\.module\\.ts$",
     "\\.service\\.ts$",
+    "\\.dto\\.ts$",
+    "\\.filter\\.ts$",
     "main.ts"
   ],
   "transform": {

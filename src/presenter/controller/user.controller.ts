@@ -1,6 +1,6 @@
-import { Controller } from "@nestjs/common";
+import { Controller } from '@nestjs/common'
 
-@Controller('user')
+@Controller({ path: 'user', version: '1' })
 export class UserController {
     constructor() {}
 }
