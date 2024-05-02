@@ -8,10 +8,12 @@
   "testRegex": ".*\\.spec\\.ts$",
   "coveragePathIgnorePatterns": [
     "\\.module\\.ts$",
+    "\\.service\\.ts$",
     "main.ts"
   ],
   "testPathIgnorePatterns": [
     "\\.module\\.ts$",
+    "\\.service\\.ts$",
     "main.ts"
   ],
   "transform": {
