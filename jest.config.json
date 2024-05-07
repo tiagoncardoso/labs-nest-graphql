@@ -11,6 +11,7 @@
     "\\.service\\.ts$",
     "\\.dto\\.ts$",
     "\\.filter\\.ts$",
+    "\\.enum\\.ts$",
     "main.ts"
   ],
   "testPathIgnorePatterns": [
@@ -18,6 +19,7 @@
     "\\.service\\.ts$",
     "\\.dto\\.ts$",
     "\\.filter\\.ts$",
+    "\\.enum\\.ts$",
     "main.ts"
   ],
   "transform": {
@@ -26,6 +28,9 @@
   "collectCoverageFrom": [
     "**/*.(t|j)s"
   ],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/../src/$1"
+  },
   "coverageDirectory": "../coverage",
   "testEnvironment": "node"
 }

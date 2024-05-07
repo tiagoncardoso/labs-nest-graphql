@@ -7,5 +7,5 @@ export class ProductDto {
 
 export class ProductOutputDto {
     id: string
-    name: string
+    description: string
 }

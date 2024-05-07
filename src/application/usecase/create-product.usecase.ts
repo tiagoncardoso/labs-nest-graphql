@@ -12,9 +12,12 @@ export class CreateProductUsecase {
     public async execute(productDto: ProductDto): Promise<ApiResponse<ProductOutputDto>> {
         const product = new Product(productDto.name, productDto.description, productDto.value)
 
+        const foonew: ApiResponse<ProductOutputDto> = null
+
         if (product.isValid()) {
-            return new Promise(() => {
-                return new ProductOutputDto()
+            console.log(product)
+            return new Promise((resolve) => {
+                resolve(foonew)
             })
         }
 

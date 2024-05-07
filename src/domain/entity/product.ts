@@ -12,11 +12,15 @@ export class Product {
         this.value = value
     }
 
+    get productName(): string {
+        return this.name
+    }
+
     public isValid(): boolean {
         try {
             return this.validateName() && this.validateDescription() && this.validateValue()
         } catch (error) {
-            return error
+            throw new Error(error.message)
         }
     }
 

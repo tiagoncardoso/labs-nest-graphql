@@ -7,7 +7,7 @@ describe('HealthUsecase', () => {
         healthUsecase = new HealthUsecase()
     })
 
-    describe('execute', () => {
+    describe('execute()', () => {
         it('Should return status UP', () => {
             expect(healthUsecase.execute()).toEqual({ status: 'UP' })
         })
