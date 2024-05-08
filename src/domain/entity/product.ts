@@ -1,4 +1,5 @@
 import { MinLenEnum } from '@/application/enum/min-len.enum'
+import { ProductDto } from '@/application/dto/product.dto'
 
 export class Product {
     private id: string
@@ -14,6 +15,14 @@ export class Product {
 
     get productName(): string {
         return this.name
+    }
+
+    get productPayload(): { name: string; description: string; value: number } {
+        return {
+            name: this.name,
+            description: this.description,
+            value: this.value,
+        }
     }
 
     public isValid(): boolean {

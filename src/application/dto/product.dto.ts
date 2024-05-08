@@ -1,11 +1,13 @@
 export class ProductDto {
-    id!: string
+    id?: string
     name: string
     description: string
     value: number
 }
 
 export class ProductOutputDto {
-    id: string
-    description: string
+    constructor(
+        public id: string,
+        public description: string
+    ) {}
 }
