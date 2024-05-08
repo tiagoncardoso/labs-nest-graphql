@@ -1,6 +1,6 @@
 import { HealthController } from './health.controller'
 import { Test, TestingModule } from '@nestjs/testing'
-import { HealthUsecase } from '../../application/usecase/health.usecase'
+import { HealthUsecase } from '../../application/usecase/health/health.usecase'
 
 describe('HealthController', () => {
     let healthController: HealthController

@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common'
-import { HealthUsecase } from '../../application/usecase/health.usecase'
+import { HealthUsecase } from '../../application/usecase/health/health.usecase'
 
 @Controller({
     path: 'health',

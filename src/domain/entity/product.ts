@@ -1,5 +1,4 @@
 import { MinLenEnum } from '@/application/enum/min-len.enum'
-import { ProductDto } from '@/application/dto/product.dto'
 
 export class Product {
     private id: string
