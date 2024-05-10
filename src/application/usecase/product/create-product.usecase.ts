@@ -13,16 +13,13 @@ export class CreateProductUsecase {
 
     public async execute(productDto: ProductDto): Promise<ApiResponse<ProductOutputDto>> {
         const product = new Product(productDto.name, productDto.description, productDto.value)
+        product.isValid()
 
-        if (product.isValid()) {
-            const createdProduct = await this.productRepository.create(product)
+        const createdProduct = await this.productRepository.create(product)
 
-            return {
-                message: 'Product created successfully',
-                data: createdProduct,
-            }
+        return {
+            message: 'Product created successfully',
+            data: createdProduct,
         }
-
-        throw new Error('Invalid product')
     }
 }

@@ -20,6 +20,9 @@ dependencies:
   '@prisma/client':
     specifier: 5.13.0
     version: 5.13.0(prisma@5.13.0)
+  bson:
+    specifier: ^6.7.0
+    version: 6.7.0
   class-transformer:
     specifier: ^0.5.1
     version: 0.5.1
@@ -1901,6 +1904,11 @@ packages:
     dependencies:
       node-int64: 0.4.0
     dev: true
+
+  /bson@6.7.0:
+    resolution: {integrity: sha512-w2IquM5mYzYZv6rs3uN2DZTOBe2a0zXLj53TGDqwF4l6Sz/XsISrisXOJihArF9+BZ6Cq/GjVht7Sjfmri7ytQ==}
+    engines: {node: '>=16.20.1'}
+    dev: false
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
