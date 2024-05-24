@@ -48,7 +48,7 @@ describe('FindProductByIdUsecase', () => {
             mockProductRepository = {
                 create: jest.fn(),
                 findAll: jest.fn(),
-                findById: jest.fn().mockImplementation((id) => {
+                findById: jest.fn().mockImplementation(() => {
                     return {}
                 }),
             }
