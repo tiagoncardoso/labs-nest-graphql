@@ -7,7 +7,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./deploy
+    working-directory: /dist
     shell: bash
 
 jobs:
